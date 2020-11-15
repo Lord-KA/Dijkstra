@@ -1,3 +1,10 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <limits>
+#include "Dijkstra.h"
+#include "Graph.h"
+
 Dijkstra::Dijkstra(Graph &Graph){
     graph = &Graph;
     for (long int i = 0; i < Graph.N; ++i){

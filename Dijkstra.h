@@ -1,6 +1,8 @@
 #ifndef Dijkstra_h
 #define Dijkstra_h
 
+const size_t INF = std::numeric_limits<long int>::max(); // Infinity
+
 class Dijkstra{
     public:
         Dijkstra(Graph &Graph);

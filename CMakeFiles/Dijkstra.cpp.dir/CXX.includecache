@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Documents/HSE/programming/pratice/Dijkstra/Dijkstra.h
+
+/home/user/Documents/HSE/programming/pratice/Dijkstra/Graph.cpp
+
+/home/user/Documents/HSE/programming/pratice/Dijkstra/Graph.h
+
+/home/user/Documents/HSE/programming/pratice/Dijkstra/main.cpp
+main.h
+/home/user/Documents/HSE/programming/pratice/Dijkstra/main.h
+
+/home/user/Documents/HSE/programming/pratice/Dijkstra/main.h
+iostream
+-
+vector
+-
+limits
+-
+queue
+-
+utility
+-
+algorithm
+-
+Graph.h
+/home/user/Documents/HSE/programming/pratice/Dijkstra/Graph.h
+Dijkstra.h
+/home/user/Documents/HSE/programming/pratice/Dijkstra/Dijkstra.h
+
