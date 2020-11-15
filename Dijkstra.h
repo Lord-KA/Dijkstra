@@ -7,7 +7,7 @@
 
 class Dijkstra{
     public:
-        Dijkstra(Graph *graph);
+        Dijkstra( Graph *graph );
         std::vector< long int > findDistances( long int start );
         std::vector< long int > restoreRoute( long int start, long int finish );
 

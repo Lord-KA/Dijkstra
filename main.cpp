@@ -14,7 +14,7 @@ int main()
     graph.addConnection(1, 2, 10);
     graph.addConnection(2, 3, 5);
 
-    Dijkstra dijkstra(graph);
+    Dijkstra dijkstra(&graph);
     std::cout << dijkstra.findDistances(start) << std::endl;
 
     std::cout << dijkstra.restoreRoute(start, finish) << std::endl;

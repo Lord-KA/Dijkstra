@@ -9,8 +9,8 @@
 Dijkstra::Dijkstra(Graph *graph_){
     graph = graph_;
     for (long int i = 0; i < graph->N; ++i){
-        Distance[i] = INF;
-        Parent[i] = -1;
+        Distance.push_back(INF);
+        Parent.push_back(-1);
     }
 }
 
@@ -51,12 +51,12 @@ std::vector<long int> Dijkstra::findDistances(long int start){
             Queue.push(std::make_pair(graph->Matrix[start][i], i));
     long int current = start;
     while (Queue.size()){
-        for (long int i=0; i < N; ++i)
-            if (i != current && graph.Matrix[current][i] && graph.Matrix[current][i] + Distance[current] < Distance[i]){
-                Distance[i] = graph.Matrix[current][i] + Distance[current];
+        for (long int i=0; i < graph->N; ++i)
+            if (i != current && graph->Matrix[current][i] && graph->Matrix[current][i] + Distance[current] < Distance[i]){
+                Distance[i] = graph->Matrix[current][i] + Distance[current];
                 Parent[i] = current;
                 //std::cout << Distance[i] << ' ' << i << std::endl;
-                Queue.push(std::make_pair(graph.Matrix[current][i], i));
+                Queue.push(std::make_pair(graph->Matrix[current][i], i));
             }
         
         current = Queue.top().second;

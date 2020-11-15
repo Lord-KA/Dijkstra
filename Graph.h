@@ -1,6 +1,10 @@
 #ifndef Graph_h
 #define Graph_h
 
+#include <vector>
+#include <limits>
+
+
 const size_t INF = std::numeric_limits<long int>::max(); // Infinity
 
 class Graph {
