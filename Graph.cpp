@@ -17,7 +17,7 @@ void Graph::addConnection(long int start, long int finish, long int distance)
     if (!Matrix[start][finish])
         Matrix[start][finish] = distance;
     else
-        std::cout << "WARNING: connection already exitst." << std::endl;
+        std::cerr << "WARNING: connection already exitst." << std::endl;
 }
 
 
