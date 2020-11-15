@@ -13,10 +13,10 @@ int main()
     graph.addConnection(1, 3, 30);
     graph.addConnection(1, 2, 10);
     graph.addConnection(2, 3, 5);
+
     Dijkstra dijkstra(graph);
-    dijkstra.findDistance(start);
-    std::cout << graph.Matrix << std::endl;
-    std::cout << dijkstra.Distance << std::endl;
+    std::cout << dijkstra.findDistances(start) << std::endl;
+
     std::cout << dijkstra.restoreRoute(start, finish) << std::endl;
     return 0;
 }

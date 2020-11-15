@@ -8,7 +8,7 @@ Graph::Graph(long int n) { // initialize graph
 
     for (long int i = 0; i < N; ++i){
         Matrix.push_back(std::vector<long int>());
-        Distance.push_back(std::vector<long int>())
+        Distance.push_back(std::vector<long int>());
         for (long int j = 0; j < N; ++j){
             Matrix[i].push_back(0);
             Distance[i].push_back(INF);

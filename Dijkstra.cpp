@@ -2,19 +2,20 @@
 #include <vector>
 #include <queue>
 #include <limits>
+#include <algorithm>
 #include "Dijkstra.h"
 #include "Graph.h"
 
-Dijkstra::Dijkstra(Graph graph*){
-    graph_ = graph*;
-    for (long int i = 0; i < Graph.N; ++i){
+Dijkstra::Dijkstra(Graph *graph_){
+    graph = graph_;
+    for (long int i = 0; i < graph->N; ++i){
         Distance[i] = INF;
         Parent[i] = -1;
     }
 }
 
 void Dijkstra::cleanUp(){
-    for (long int i = 0; i < Graph.N; ++i){
+    for (long int i = 0; i < graph->N; ++i){
         Distance[i] = INF;
         Parent[i] = -1;
     }
@@ -42,12 +43,12 @@ std::vector<long int> Dijkstra::restoreRoute(long int start, long int finish){
 }   
 
 
-std::vector<long int> Dijkstra::findDistance(long int start){
+std::vector<long int> Dijkstra::findDistances(long int start){
     cleanUp();
     Distance[start] = 0;
-    for (long int i=0; i < N; ++i)
-        if (graph.Matrix[start][i] && start != i)
-            Queue.push(std::make_pair(graph.Matrix[start][i], i));
+    for (long int i=0; i < graph->N; ++i)
+        if (graph->Matrix[start][i] && start != i)
+            Queue.push(std::make_pair(graph->Matrix[start][i], i));
     long int current = start;
     while (Queue.size()){
         for (long int i=0; i < N; ++i)
