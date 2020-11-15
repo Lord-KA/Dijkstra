@@ -5,8 +5,8 @@
 #include "Dijkstra.h"
 #include "Graph.h"
 
-Dijkstra::Dijkstra(Graph &Graph){
-    graph = &Graph;
+Dijkstra::Dijkstra(Graph graph*){
+    graph_ = graph*;
     for (long int i = 0; i < Graph.N; ++i){
         Distance[i] = INF;
         Parent[i] = -1;

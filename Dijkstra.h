@@ -14,6 +14,8 @@ class Dijkstra{
     private:
         std::vector< long int > Distance;
         std::vector< long int > Parent;
+
+        Graph graph_;
         
         std::priority_queue< std::pair< long int, long int > > Queue;
 };

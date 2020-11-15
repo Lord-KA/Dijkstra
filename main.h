@@ -7,8 +7,6 @@
 #include "Graph.h"
 #include "Dijkstra.h"
 
-const size_t INF = std::numeric_limits<long int>::max(); // Infinity
-
 // cout overloading for pretty vector outp
 template<typename T> 
 std::ostream& operator<<(std::ostream &out, const std::vector<T> &a)
