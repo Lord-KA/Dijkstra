@@ -1,3 +1,0 @@
-/home/user/Documents/HSE/programming/pratice/Dijkstra/CMakeFiles/rebuild_cache.dir
-/home/user/Documents/HSE/programming/pratice/Dijkstra/CMakeFiles/edit_cache.dir
-/home/user/Documents/HSE/programming/pratice/Dijkstra/CMakeFiles/Dijkstra.cpp.dir
