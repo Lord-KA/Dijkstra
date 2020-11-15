@@ -146,8 +146,8 @@ int main()
     graph.addConnection(1, 2, 10);
     graph.addConnection(2, 3, 5);
     graph.Dijkstra(start);
-    std::cout << graph.Matrix << std::endl;
-    std::cout << graph.Distance << std::endl;
+    //std::cout << graph.Matrix << std::endl;
+    //std::cout << graph.Distance << std::endl;
     std::cout << graph.restoreRoute(start, finish) << std::endl;
     return 0;
 }
