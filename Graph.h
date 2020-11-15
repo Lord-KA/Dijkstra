@@ -18,8 +18,6 @@ class Graph {
 
         std::vector< std::vector< long int > > Distance;
 
-        std::priority_queue< std::pair< long int, long int > > Queue;
-
         friend class Dijkstra;
 };
 
