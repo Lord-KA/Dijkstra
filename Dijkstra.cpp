@@ -25,6 +25,10 @@ void Dijkstra::cleanUp(){
 
 
 std::vector<long int> Dijkstra::restoreRoute(long int start, long int finish){
+    long int N = graph->N;
+    if (!(start < N && start > -1 && finish < N && finish > -1))
+        std::cerr << "ERROR: start or finish node does not exitst." << std::endl;
+
     long int current = finish;
     std::vector<long int> Route;
     while (current != -1 && current != start){
@@ -44,6 +48,9 @@ std::vector<long int> Dijkstra::restoreRoute(long int start, long int finish){
 
 
 std::vector<long int> Dijkstra::findDistances(long int start){
+    if (!(start < graph->N && start > -1))
+        std::cerr << "ERROR: start node does not exitst." << std::endl;
+
     cleanUp();
     Distance[start] = 0;
     for (long int i=0; i < graph->N; ++i)
